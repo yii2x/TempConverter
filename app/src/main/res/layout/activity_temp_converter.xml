@@ -12,5 +12,61 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Degrees"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fahrenheit"
+        android:id="@+id/textView2"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/degreeEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Celsius"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/degreeEditText"
+        android:layout_alignParentStart="true"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/degreeEditText"
+        android:layout_alignStart="@+id/degreeEditText"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_toEndOf="@+id/degreeEditText"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/convertButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_below="@+id/resultTextView"
+        android:layout_marginTop="42dp"
+        android:text="Convert" />
+
+
 </RelativeLayout>
